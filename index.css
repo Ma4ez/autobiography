@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Rubik",sans-serif;
+}
+.body-home {
+    background-image: url(pozadina-body.png), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    background-position: -210px 0, 0 0;
+    background-size: 140%, auto;
+    background-attachment: scroll, scroll;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 10px 40px;
+}
+.nav-links{
+    align-self: center;
+}
+.link:link, .link:visited{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #e64980;
+    font-size: 20px;
+    transition: all 0.1s;
+    padding: 0 20px;
+    border-radius: 10px;
+
+}
+.link:hover, .link:active{
+    color: #c2255c;
+    transform: scale(1.04);
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    justify-items: center;
+    height: 800px;
+}
+.hero-container{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+.heading-primary{
+    padding: 50px 150px;
+    font-size: 78px;
+    font-family: inherit;
+}
+.heading-secondary{
+    padding-left: 150px;
+    padding-right: 98px;
+    font-family: inherit;
+    font-size: 28px;
+    text-align: justify;
+}
+.img-pc{
+    width: 100%;
+    padding: 12px;
+    transform: scale(0.8);
+    border-radius: 500px;
+    box-shadow: 0 0 5px 10px rgba(0,0,0,0.08);
+}
+/*-----------------------------
+            BIOGRAPHY
+--------------------------------*/
+.bio-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 30px 100px;
+    gap: 24px;
+}
+.bio-hero-container{
+    padding: 24px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px 10px rgba(0,0,0,0.08);
+}
+p{
+    text-align: justify;
+    font-size: 24px;
+    font-family: inherit;
+}
+.first-p{
+    text-indent: 50px;
+    padding-bottom: 10px;
+}
+.bio-img{
+    width: 75%;
+    padding: 12px;
+    border-radius: 15px;
+}
+.naslov{
+    text-align: center;
+    /*text-transform: uppercase;*/
+    font-family: inherit;
+    margin: 15px 0;
+    font-size: 48px;
+}
+/*------------------------
+          ABOUT
+-------------------------*/
+
+.about-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+}
+.about-text{
+    border-radius: 12px;
+    box-shadow: 0 0 40px 10px rgba(0,0,0,0.08);
+    overflow: hidden;
+    margin: 0 400px;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+}
+.section-about{
+    grid-column: 2/3;
+}
+.about-p{
+    font-size: 20px;
+    margin-top: 24px;
+    text-align: justify;
+    text-indent: 50px;
+    padding: 0 36px 36px 36px;
+}
+.img-girl{
+    width: 100%;
+    border-radius: 12px;
+}
+/*------------------------
+          EDUCATION
+-------------------------*/
+
+.section-education{
+    padding: 70px 150px;
+}
+.education-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    justify-items: center;
+}
+.education-card{
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 0 40px 10px rgba(0,0,0,0.08);
+}
+.heading-sec{
+    color: #bbbbbb;
+    font-size: 20px;
+    text-align: center;
+    padding: 12px;
+}
+.heading-teritary{
+    color: #a5a2fd;
+    padding-bottom: 12px;
+    text-align: center;
+}
+.education-text{
+    font-size: 18px;
+}
+.heading-education{
+    color: #a5a2fd;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+/*------------------------
+          PICTURES
+-------------------------*/
+.pictures-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    padding: 34px;
+}
+.images{
+    background-size: cover;
+    width: 100%;
+    height: 280px;
+}
+
+/*------------------------
+          FOOTER
+-------------------------*/
+.footer{
+    background-color: #cdc8f7;
+    border-top: 8px solid #a5a2fd;
+    display:grid;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 24px 256px;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-logo{
+    width: 100%;
+    grid-row:1/-1;
+}
+.footer-heading{
+    color: black;
+    font-size: 24px;
+    grid-column: 2/-1;
+}
+.footer-link{
+    color: black;
+    text-decoration: none;
+}
